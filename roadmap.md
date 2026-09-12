@@ -7,4 +7,4 @@
 - [x] Add complete metadata and footer disclaimer
 - [x] Verify desktop and mobile experience
 
-- [ ] Add uploaded portrait, trade charts, and Trustpilot reviews
+- [x] Add uploaded portrait, trade charts, and Trustpilot reviews
