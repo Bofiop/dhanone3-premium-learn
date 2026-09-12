@@ -5,4 +5,6 @@
 - [x] Add exact video, social, mentorship, and Trustpilot links
 - [x] Add validated contact form with honest Telegram fallback
 - [x] Add complete metadata and footer disclaimer
-- [ ] Verify desktop and mobile experience
+- [x] Verify desktop and mobile experience
+
+- [ ] Add uploaded portrait, trade charts, and Trustpilot reviews
