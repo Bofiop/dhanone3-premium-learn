@@ -126,10 +126,26 @@ function HomePage() {
       <div className="mx-auto grid max-w-7xl gap-12 px-5 lg:grid-cols-[0.8fr_1.2fr] lg:items-center lg:px-8">
         <div className="reveal-item">
           <div className="glass-panel relative flex aspect-[4/5] items-center justify-center overflow-hidden">
-            <div className="absolute inset-0 grid-field opacity-50"/><div className="absolute inset-x-[12%] bottom-0 top-[10%] rounded-full bg-primary/10 blur-3xl"/><img src="/Images/dhanone3-portrait.png" alt="DhanOne3 trading educator and mentor" className="relative z-10 size-full object-contain object-bottom drop-shadow-2xl"/>
+            <div className="absolute inset-0 grid-field opacity-50"/><div className="absolute inset-x-[12%] bottom-0 top-[10%] rounded-full bg-primary/10 blur-3xl"/><img src="/Images/dhanone3-portrait.png" alt="Gaurav Vaishnav, trader, mentor and market educator behind DhanOne3" className="relative z-10 size-full object-contain object-bottom drop-shadow-2xl"/>
+            <div className="absolute inset-x-5 bottom-5 z-20 flex items-center justify-between gap-3 rounded-xl border border-border bg-background/70 px-4 py-3 backdrop-blur-xl">
+              <div><p className="font-display text-sm font-bold text-foreground">Gaurav Vaishnav</p><p className="mt-1 text-[9px] font-bold text-muted-foreground">TRADER • MENTOR • MARKET EDUCATOR</p></div>
+              <span className="shrink-0 rounded-full border border-primary/30 bg-primary/10 px-3 py-1 text-[9px] font-bold text-primary">SINCE 2019</span>
+            </div>
           </div>
         </div>
-        <div className="reveal-item lg:pl-12"><Eyebrow>ABOUT DHANONE3</Eyebrow><h2 className="mt-5 font-display text-4xl font-bold leading-tight sm:text-6xl">THE PERSON BEHIND<br/>THE CHARTS.</h2><p className="mt-7 max-w-2xl text-base leading-8 text-muted-foreground">DhanOne3 focuses on simplifying trading concepts and helping learners develop stronger market understanding, structured analysis and disciplined decision-making.</p><div className="mt-10 grid grid-cols-2 gap-px overflow-hidden border border-border bg-border sm:grid-cols-3">{["Market Structure","Liquidity","Trading Bias","Price Action","Smart Money Concepts","Risk Awareness","Trading Psychology"].map((x,i)=><div key={x} className={`bg-background p-4 text-xs font-semibold ${i===6 ? "col-span-2 sm:col-span-3" : ""}`}><span className="mr-2 text-primary">0{i+1}</span>{x}</div>)}</div></div>
+        <div className="reveal-item lg:pl-12">
+          <Eyebrow>ABOUT DHANONE3</Eyebrow>
+          <h2 className="mt-5 font-display text-4xl font-bold leading-tight sm:text-6xl">THE PERSON BEHIND<br/>THE CHARTS.</h2>
+          <p className="mt-8 font-display text-3xl font-bold leading-none text-foreground sm:text-4xl">Gaurav Vaishnav</p>
+          <p className="mt-3 text-[10px] font-bold tracking-[0.22em] text-primary">TRADER • MENTOR • MARKET EDUCATOR</p>
+          <div className="mt-7 max-w-2xl space-y-5 text-base leading-8 text-muted-foreground">
+            <p>Trading since 2019, Gaurav Vaishnav is the person behind DhanOne3, focused on making complex market concepts simple, practical, and actionable.</p>
+            <p>His approach revolves around Smart Money Concepts, Price Action, Liquidity, Market Structure, Bias, and disciplined chart analysis — helping traders understand why the market moves instead of simply following signals.</p>
+            <p>Through DhanOne3, Gaurav shares his knowledge through free educational content, real-chart analysis, and structured mentorship, with a strong emphasis on learning, practice, risk awareness, and discipline.</p>
+          </div>
+          <div className="mt-9 grid gap-3 sm:grid-cols-3">{[["01","TRADING SINCE","2019"],["02","CORE APPROACH","SMC • PRICE ACTION"],["03","FOCUS","EDUCATION • DISCIPLINE"]].map(([num,label,value])=><div key={num} className="glass-panel group relative overflow-hidden p-4 transition-transform duration-500 hover:-translate-y-1"><span className="absolute right-3 top-2 font-display text-2xl font-bold text-primary/15 transition-colors duration-500 group-hover:text-primary/35">{num}</span><p className="text-[9px] font-bold text-muted-foreground">{label}</p><p className="mt-2 font-display text-sm font-bold leading-5 text-foreground">{value}</p><span className="absolute inset-x-4 bottom-0 h-px bg-primary/0 transition-colors duration-500 group-hover:bg-primary/50"/></div>)}</div>
+          <div className="mt-8 flex flex-wrap gap-2">{["Market Structure","Liquidity","Trading Bias","Price Action","Smart Money Concepts","Risk Awareness","Trading Psychology"].map((x)=><span key={x} className="rounded-full border border-border bg-secondary/40 px-3 py-1.5 text-[10px] font-semibold text-muted-foreground transition-colors hover:border-primary/40 hover:text-foreground">{x}</span>)}</div>
+        </div>
       </div>
     </section>
 
