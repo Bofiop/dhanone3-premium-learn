@@ -8,3 +8,4 @@
 - [x] Verify desktop and mobile experience
 
 - [x] Add uploaded portrait, trade charts, and Trustpilot reviews
+- [x] Upgrade About section with Gaurav Vaishnav identity, copy, and three highlight cards
