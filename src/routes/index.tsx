@@ -35,18 +35,18 @@ const socials = [
   { Icon: MessageCircle, name: "DISCORD", description: "Join the community and discussions.", url: links.discord },
 ];
 const tradeImages = [
-  "/trade-chart-gold-plan.jpg",
-  "/trade-chart-gold-setup.jpg",
-  "/trade-chart-nifty.jpg",
-  "/trade-chart-reversal.jpg",
-  "/trade-chart-liquidity.jpg",
+  "/Images/trade-chart-gold-plan.jpg",
+  "/Images/trade-chart-gold-setup.jpg",
+  "/Images/trade-chart-nifty.jpg",
+  "/Images/trade-chart-reversal.jpg",
+  "/Images/trade-chart-liquidity.jpg",
 ];
 const tradeLabels = ["MARKET STRUCTURE", "LIQUIDITY MAP", "PRICE ACTION", "TRADE JOURNAL", "TRADING SETUP"];
 const reviewImages = [
-  "/review-praveen.jpg",
-  "/review-takdir.jpg",
-  "/review-sarthak.jpg",
-  "/review-khemraj.jpg",
+  "/Images/review-praveen.jpg",
+  "/Images/review-takdir.jpg",
+  "/Images/review-sarthak.jpg",
+  "/Images/review-khemraj.jpg",
 ];
 
 export const Route = createFileRoute("/")({
@@ -126,7 +126,7 @@ function HomePage() {
       <div className="mx-auto grid max-w-7xl gap-12 px-5 lg:grid-cols-[0.8fr_1.2fr] lg:items-center lg:px-8">
         <div className="reveal-item">
           <div className="glass-panel relative flex aspect-[4/5] items-center justify-center overflow-hidden">
-            <div className="absolute inset-0 grid-field opacity-50"/><div className="absolute inset-x-[12%] bottom-0 top-[10%] rounded-full bg-primary/10 blur-3xl"/><img src="/dhanone3-portrait.png" alt="DhanOne3 trading educator and mentor" className="relative z-10 size-full object-contain object-bottom drop-shadow-2xl"/>
+            <div className="absolute inset-0 grid-field opacity-50"/><div className="absolute inset-x-[12%] bottom-0 top-[10%] rounded-full bg-primary/10 blur-3xl"/><img src="/Images/dhanone3-portrait.png" alt="DhanOne3 trading educator and mentor" className="relative z-10 size-full object-contain object-bottom drop-shadow-2xl"/>
           </div>
         </div>
         <div className="reveal-item lg:pl-12"><Eyebrow>ABOUT DHANONE3</Eyebrow><h2 className="mt-5 font-display text-4xl font-bold leading-tight sm:text-6xl">THE PERSON BEHIND<br/>THE CHARTS.</h2><p className="mt-7 max-w-2xl text-base leading-8 text-muted-foreground">DhanOne3 focuses on simplifying trading concepts and helping learners develop stronger market understanding, structured analysis and disciplined decision-making.</p><div className="mt-10 grid grid-cols-2 gap-px overflow-hidden border border-border bg-border sm:grid-cols-3">{["Market Structure","Liquidity","Trading Bias","Price Action","Smart Money Concepts","Risk Awareness","Trading Psychology"].map((x,i)=><div key={x} className={`bg-background p-4 text-xs font-semibold ${i===6 ? "col-span-2 sm:col-span-3" : ""}`}><span className="mr-2 text-primary">0{i+1}</span>{x}</div>)}</div></div>
